@@ -36,7 +36,7 @@
 #define ANSI_FG_WHITE "\x1b[37m"
 
 #if defined(OS_WIN)
-#define EXENAME "ts"
+#define EXENAME "tunsafe"
 
 static bool SendMessageToService(HANDLE pipe, int message, const void *data, size_t data_size) {
   uint8 *temp = new uint8[data_size + 5];
